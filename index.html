@@ -11,6 +11,16 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <script src="javascripts/jquery-1.10.0.min.js"></script>
+    <script>
+      $(function(){
+        $(".email").each(function(){
+          this.innerHTML = this.innerHTML.replace(/GOOBY/g, '@');
+          this.innerHTML = this.innerHTML.replace(/PLS/g, '.');
+        })
+      });
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -38,6 +48,9 @@
         </ul>
 	<h2>Source Code & Downloads</h2>
 	<p>The project is hosted on <a href="https://github.com/OpenHMD/OpenHMD">github</a>, where the source code, downloads and usage examples are available.</p>
+	<h2>Contact</h2>
+	<p class="email"><em>E-mail: </em><a href="mailto:nonameGOOBYnurdPLSse">nonameGOOBYnurdPLSse</a></p>
+	<p><em>IRC channel: </em>#openhmd on <a href="http://freenode.net/">freenode</a></p>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
