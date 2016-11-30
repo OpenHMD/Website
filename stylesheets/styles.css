@@ -3,7 +3,7 @@
 body {
   padding:50px;
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#777;
+  color:#333;
   font-weight:300;
 }
 
@@ -120,6 +120,7 @@ header ul {
   box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
   width:270px;
 }
+
 
 header li {
   width:89px;
