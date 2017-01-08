@@ -12,15 +12,8 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <script src="../javascripts/jquery-1.10.0.min.js"></script>
-    <script>
-      $(function(){
-        $(".email").each(function(){
-          this.innerHTML = this.innerHTML.replace(/GOOBY/g, '@');
-          this.innerHTML = this.innerHTML.replace(/PLS/g, '.');
-        })
-      });
-    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../javascripts/slider.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -39,23 +32,43 @@
       </header>
       <section>
         <h1>Welcome to OpenHMD.net</h1>
-	<h2>Showcase</h2>
-	
-	<p>All projects shown on this page are confirmed and/or already available. There are more projects in development using OpenHMD but these are not confirmed or public.</p>
+      	<h2>Showcase</h2>
 
-	<h2>Confirmed projects using OpenHMD</h2>
-		<ul>
-			<li><a href="http://www.thorworks.org/engine-features/">MassiveEngine</a> - Game engine by Thorworks</li>
-			<li><a href="https://www.neverball.org">Neverball and Neverputt</a> - Open source puzzle/action game</li>
-		</ul>
+      	<p>All projects shown on this page are confirmed and/or already available. There are more projects in development using OpenHMD but these are not confirmed or public.</p>
+
+        <h2>Gallery with some projects</h2>
+        <div id="slider">
+          <a href="#" class="control_next">>></a>
+          <a href="#" class="control_prev"><</a>
+          <ul>
+            <li style="background-size: 100%; background-image: url('../images/slide/blender-openhmd.jpg');">
+            <a href="http://www.blender.org">
+            <span style="background: rgba(0,0,0,0.6);">Blender - Realtime VR Viewport (will land in 2.79)</span></li></a>
+            <li style="background-size: 100%; background-image: url('../images/slide/massiveengine-reverierealms.jpg');">
+            <a href="http://www.thorworks.org/engine-features/">
+            <span style="background: rgba(0,0,0,0.6);">MassiveEngine by Thorworks, showing Reverie Realms: Arena demo)</span></li></a>
+            <li style="background-size: 100%; background-image: url('../images/slide/neverball-openhmd.jpg');">
+            <a href="https://www.neverball.org">
+            <span style="background: rgba(0,0,0,0.6);">Neverball and Neverputt</span></li></a>
+            <li style="background-size: 100%; background-image: url('../images/slide/vmd-openhmd.jpg');">
+            <a href="http://www.ks.uiuc.edu/Research/vmd/">
+            <span style="background: rgba(0,0,0,0.6);">Visual Molecular Dynamics - academic program using OpenHMD for VR visualisation.</span></li></a>
+            <li style="background-size: 100%; background-image: url('../images/slide/vr-zero-pri.jpg');">
+            <a href="https://thebubbleworks.com/waynes-bubble/2016/9/15/vr-zero-python-vr-on-the-raspberrypi">
+            <span style="background: rgba(0,0,0,0.6);">VR Zero, framework for Raspberry Pi</span></li></a>
+            <li style="background-size: 100%; background-image: url('../images/slide/jediacademy-openhmd.jpg');">
+            <a href="http://jochen.subliminal.at/2015/03/01/oculus-rift-dk2-support-for-jedi-academy/">
+            <span style="background: rgba(0,0,0,0.6);">Jedi Academy open source implentation with optional OpenHMD support</span></li></a>
+          </ul>
+        </div>
+          <br>
+          <h2>Complete list</h2>
+          <p>A longer list with OpenHMD projects will be added to the Wiki in the future.</p>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme based on Minimalist by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
 		</div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-
   </body>
 </html>
 
